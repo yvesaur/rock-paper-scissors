@@ -6,9 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors!</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
     <script src="script.js" async defer></script>
 </head>
 <body>
-    
+    <audio autoplay loop>
+        <source src="./audio/bg-music.webm" type="audio/webm">
+    </audio>
+
+    <div class="header">
+        <img src="./images/logo.png" alt="Rock Paper Scissors image">
+        <h1>Rock Paper Scissors</h1>
+    </div>
+    <div class="content">
+        <div class="game">
+            <div class="player">
+                <h1>Player: 0</h1>
+                <div class="selected">
+                </div>
+                <button class="rock-button">Rock</button>
+                <button class="paper-button">Paper</button>
+                <button class="scissors-button">Scissors</button>
+            </div>
+            <h1>VS.</h1>
+            <div class="computer">
+                <h1>Bot: 0</h1>
+                <div class="selected"></div>
+                <button class="computer-button">Bot Already Decided</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer">© 2023 Yves Casio, For The Odin Project</div>
 </body>
 </html>

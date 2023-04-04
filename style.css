@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+:root {
+    --main-color: #0F6466;
+    --header-color: #2C3532;
+    --text-color: #f0f0f0;
+    --button-color: #D2E8E3;
+}
+
+html, body {
+    box-sizing: border-box;
+    height: 100%;
+    margin: 0;
+}
+
+html {
+    background-color: var(--main-color);
+}
+
+h1 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: bolder;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.header, .footer {
+    display: flex;
+    flex-basis: 5%;
+    background-color: var(--header-color);
+    color: var(--text-color);
+    padding: 4px;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.header img {
+    height: 60px;
+    border-radius: 50%;
+}
+
+.header {
+    box-shadow: 0px 4px 8px 4px rgba(0.0, 0.0, 0.0, 0.4);
+}
+
+.content {
+    flex: 1 1 90%;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content .game {
+    border: 3px solid var(--header-color);
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.selected {
+    height: 150px;
+    width: 150px;
+    border: 5px solid var(--header-color);
+    border-radius: 20%;
+    flex-shrink: 0;
+}
+
+.rock-background {
+    background-image: url(./images/rock.gif);
+    background-size: 100% 100%;
+}
+
+.paper-background {
+    background-image: url(./images/paper.gif);
+    background-size: 100% 100%;
+}
+
+.scissors-background {
+    background-image: url(./images/scissors.gif);
+    background-size: 100% 100%;
+}
+  
+.player, .computer {
+    height: 300px;
+    width: 300px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+
+}
+
+.player button, .computer button {
+    width: 90px;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid var(--header-color);
+    background-color: var(--button-color);
+    font-family: 'Rubik', sans-serif;
+}
+
+.computer button {
+    font-size: 16px;
+}
+
+.player button:hover {
+    transform: scale(1.1);
+}
+
+.game h1 {
+    text-align: center;
+    color: var(--text-color);
+}
+
+
+.footer {
+    justify-content: center;
+}

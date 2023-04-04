@@ -1,8 +1,8 @@
-// returns random number from 0 to num
-function random(num) {
-    return Math.floor(Math.random() * num)
-}
 
+// Returns random number between 0 to num
+function random(number) {
+    return Math.floor(Math.random()*number);
+}
 
 const roshambo = ['rock', 'paper', 'scissors']
 let PlayerChoice;
@@ -55,3 +55,27 @@ function game(){
         i++
     }
 }
+
+
+const rockButton = document.querySelector(".rock-button")
+const paperButton = document.querySelector(".paper-button")
+const scissorsButton = document.querySelector(".scissors-button")
+const playerChoiced = document.querySelector(".player .selected")
+
+rockButton.addEventListener('click', () => {
+    playerChoiced.classList.remove('rock-background', 'paper-background', 'scissors-background')
+    playerChoiced.classList.add('rock-background')
+    PlayerChoice = 'rock'
+})
+
+paperButton.addEventListener('click', () => {
+    playerChoiced.classList.remove('rock-background', 'paper-background', 'scissors-background')
+    playerChoiced.classList.add('paper-background')
+    PlayerChoice = 'paper'
+})
+
+scissorsButton.addEventListener('click', () => {
+    playerChoiced.classList.remove('rock-background', 'paper-background', 'scissors-background')
+    playerChoiced.classList.add('scissors-background')
+    PlayerChoice = 'scissors'
+})
