@@ -20,20 +20,28 @@
     </div>
     <div class="content">
         <div class="game">
-            <div class="player">
-                <h1>Player: 0</h1>
-                <div class="selected">
+            <div class="game-ui">
+                <div class="player">
+                    <h1>Player: 0</h1>
+                    <div class="selected">
+                    </div>
+                    <button class="rock-button">Rock</button>
+                    <button class="paper-button">Paper</button>
+                    <button class="scissors-button">Scissors</button>
                 </div>
-                <button class="rock-button">Rock</button>
-                <button class="paper-button">Paper</button>
-                <button class="scissors-button">Scissors</button>
+                <h1>VS.</h1>
+                <div class="computer">
+                    <h1>Computer: 0</h1>
+                    <div class="selected"></div>
+                    <button class="computer-button">Bot Already Decided before you even got here</button>
+                </div>
             </div>
-            <h1>VS.</h1>
-            <div class="computer">
-                <h1>Bot: 0</h1>
-                <div class="selected"></div>
-                <button class="computer-button">Bot Already Decided</button>
+            <button class="start-button">PLAY ROUND</button>
+        </div>
+        <div class="modal-container">
+            <div class="modal-content">
             </div>
+            <button class="modal-button">Restart</button>
         </div>
     </div>
     <div class="footer">© 2023 Yves Casio, For The Odin Project</div>
